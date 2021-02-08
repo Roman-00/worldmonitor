@@ -5,9 +5,286 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>World-Monitor</title>
+    <link rel="stylesheet" href="plugin/fontAwesome/all.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <h1>Hello World</h1>
+
+    <aside id="top_ad" class="top__ad">
+        <img src="img/ad.jpg" alt="World Monitor">
+    </aside>
+
+    <header class="header" id="header">
+
+        <div class="container">
+
+            <div class="header__interface">
+                <div class="header__interface--left">
+                    <div class="language__version">
+                        <a href="#" class="language__version--item">
+                            Eng
+                        </a> /
+                        <a href="#" class="language__version--item language__version--item-active">
+                            Rus
+                        </a>
+                    </div>
+    
+                    <div class="header__search">
+                        <div class="header__search--box">
+                            <input type="text" placeholder="Введите для поиска ..." class="header__search--input">
+                            <div class="header__search--btn">
+                                <i class="fas fa-search"></i>
+                            </div>
+                            <div class="header__search--cancel">
+                                <i class="fas fa-times"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="#" class="logo__link">
+                    <span class="logo menu__logo">
+                        <svg class="logo__svg" version="1.0" xmlns="http://www.w3.org/2000/svg" width="350px" height="45px" viewBox="0 0 12000 1380" preserveAspectRatio="xMidYMid meet">
+                            <g stroke="none">
+                            </g>
+                            <g stroke="none">
+                            <path d="M1778 1341 c-130 -42 -209 -134 -239 -280 -44 -209 -4 -411 103 -520 84 -85 176 -121 316 -121 260 0 396 137 428 430 5 50 -1 104 -24 215 -29 137 -138 248 -272 281 -81 20 -243 17 -312 -5z m271 -126 c43 -22 94 -86 115 -144 15 -43 17 -74 14 -199 -4 -135 -6 -151 -30 -197 -45 -87 -106 -125 -198 -125 -108 0 -192 79 -219 208 -15 72 -13 224 3 294 19 79 63 137 124 165 39 17 157 16 191 -2z"/>
+                            <path d="M4015 1346 c-108 -26 -175 -96 -216 -226 -21 -65 -24 -95 -24 -215 1 -125 4 -149 28 -227 16 -48 34 -93 41 -100 6 -7 15 -20 18 -29 11 -28 94 -89 147 -109 83 -30 141 -34 238 -15 48 10 100 24 115 31 59 30 57 35 60 -218 l3 -233 70 -3 c38 -2 80 0 92 3 l23 5 -2 668 -3 667 -77 3 c-59 2 -78 0 -78 -10 0 -10 -2 -10 -9 1 -6 9 -11 -2 -15 -33 -4 -25 -10 -46 -13 -46 -3 0 -17 8 -31 19 -52 36 -108 59 -173 70 -81 14 -129 13 -194 -3z m266 -138 c35 -12 81 -32 102 -46 l37 -25 0 -258 0 -259 -24 -15 c-34 -23 -154 -55 -203 -55 -56 0 -115 24 -147 61 -68 76 -101 272 -71 429 8 42 42 113 64 134 60 57 140 69 242 34z"/>
+                            <path d="M7256 1344 c-120 -37 -201 -123 -244 -259 -21 -66 -23 -302 -3 -360 42 -122 104 -208 182 -252 140 -80 379 -72 494 16 107 81 167 220 168 391 1 252 -107 420 -295 465 -81 19 -238 18 -302 -1z m255 -128 c46 -19 70 -42 104 -101 l30 -50 0 -170 c0 -165 -1 -172 -27 -220 -14 -27 -37 -60 -50 -72 -57 -54 -167 -69 -236 -34 -108 56 -150 167 -139 375 7 159 39 225 128 266 52 23 142 26 190 6z"/>
+                            <path d="M9857 1350 c-62 -11 -123 -53 -150 -104 -21 -39 -22 -57 -27 -361 l-5 -320 -63 -3 -63 -3 3 -52 3 -52 50 -11 c87 -20 80 -9 132 -207 5 -21 41 -37 82 -37 15 0 32 -5 39 -12 9 -9 12 17 12 120 l0 132 135 0 135 0 0 60 0 60 -135 0 -135 0 1 288 c1 330 2 336 79 361 37 12 57 12 119 2 41 -7 80 -15 87 -18 13 -5 17 6 29 79 5 33 3 39 -22 51 -27 15 -183 38 -233 36 -14 -1 -47 -5 -73 -9z"/>
+                            <path d="M10593 1345 c-176 -48 -273 -205 -273 -445 0 -302 158 -479 430 -481 185 -2 305 63 379 207 67 128 67 394 0 525 -52 104 -137 172 -244 195 -78 17 -226 16 -292 -1z m260 -135 c55 -26 101 -96 117 -178 14 -70 8 -266 -9 -323 -30 -97 -110 -158 -207 -159 -64 0 -110 19 -150 62 -67 71 -88 154 -82 324 6 162 37 230 125 274 53 26 149 26 206 0z"/>
+                            <path d="M275 1338 c-2 -7 -25 -85 -49 -173 -25 -88 -57 -198 -71 -245 -13 -47 -34 -119 -46 -160 -11 -41 -29 -102 -39 -135 -11 -33 -24 -81 -29 -106 -6 -25 -13 -53 -17 -62 -5 -15 4 -17 89 -17 104 0 101 -2 113 67 3 16 14 62 25 103 27 98 69 259 75 285 2 11 6 31 9 45 4 14 8 36 11 50 12 65 46 186 54 194 11 11 25 -23 36 -80 7 -43 51 -217 83 -334 11 -41 32 -118 46 -170 14 -52 30 -110 36 -127 l11 -33 93 0 93 0 15 48 c9 26 27 88 42 137 14 50 39 133 55 185 25 82 60 210 90 329 19 76 42 54 61 -58 4 -30 15 -77 23 -105 8 -28 20 -78 26 -111 7 -33 18 -78 25 -100 6 -22 18 -65 24 -95 7 -30 17 -68 22 -85 5 -16 16 -56 25 -88 l15 -57 90 0 c57 0 89 4 89 11 0 6 -18 74 -41 152 -23 78 -49 171 -59 207 -10 36 -36 128 -59 204 -22 76 -41 146 -41 153 0 8 -6 29 -14 46 -8 18 -20 56 -26 85 l-12 52 -113 0 -112 0 -17 -57 c-10 -32 -28 -92 -41 -133 -21 -68 -63 -216 -80 -280 -62 -248 -80 -295 -96 -252 -4 9 -18 67 -33 127 -43 176 -104 411 -125 480 -5 17 -15 49 -21 73 l-11 42 -110 0 c-79 0 -111 -4 -114 -12z"/>
+                            <path d="M2623 1344 c-10 -4 -13 -105 -13 -455 l0 -449 93 0 92 0 -3 70 c-3 58 -1 70 12 70 8 0 23 -8 33 -18 42 -41 115 -85 230 -135 38 -17 104 -14 116 5 14 21 -17 158 -42 189 -18 22 -48 27 -258 45 l-83 7 0 336 0 337 -82 1 c-46 1 -89 0 -95 -3z"/>
+                            <path d="M3347 1344 c-4 -4 -7 -303 -7 -664 0 -497 3 -659 12 -668 13 -13 155 -17 175 -4 10 6 12 152 10 673 l-2 664 -90 3 c-50 1 -94 0 -98 -4z"/>
+                            <path d="M5417 1343 c-4 -3 -7 -208 -7 -455 l0 -448 95 0 95 0 0 45 c0 33 4 45 14 45 8 0 18 -5 21 -10 11 -18 118 -67 183 -84 133 -34 248 -11 310 60 30 36 34 37 55 24 102 -64 274 -116 345 -105 163 26 220 78 242 221 6 41 9 198 8 389 l-3 320 -78 3 c-47 2 -84 -2 -92 -8 -11 -9 -14 -81 -18 -333 -2 -177 -7 -335 -11 -352 -11 -45 -42 -72 -98 -86 -66 -15 -165 1 -238 40 l-52 28 1 342 c2 295 0 343 -13 357 -12 11 -35 15 -96 13 l-80 -2 0 -334 c0 -351 -3 -377 -46 -415 -55 -47 -168 -41 -284 15 l-65 32 -5 350 c-3 193 -7 351 -8 353 -5 5 -169 1 -175 -5z"/>
+                            <path d="M8060 895 l0 -455 90 0 90 0 0 34 c0 19 4 37 9 40 5 3 40 -10 78 -28 94 -47 233 -80 298 -72 58 8 132 34 158 56 10 8 31 35 45 60 l27 45 3 388 3 387 -95 0 -96 0 0 -338 c0 -334 0 -339 -23 -382 -16 -31 -33 -47 -57 -56 -71 -26 -171 -11 -282 42 l-58 28 -2 350 -3 351 -92 3 -93 3 0 -456z"/>
+                            <path d="M9154 1333 c-4 -10 -9 -210 -10 -445 -2 -327 0 -428 9 -428 7 0 6 -4 -3 -10 -10 -7 16 -10 83 -10 l97 0 0 458 c0 299 -4 452 -10 442 -6 -10 -10 -11 -10 -2 0 8 -22 12 -74 12 -61 0 -75 -3 -82 -17z"/>
+                            <path d="M11410 894 l0 -454 94 0 93 0 -5 70 c-6 82 4 88 59 39 47 -42 139 -95 207 -119 123 -43 147 -20 112 108 -12 45 -28 86 -35 92 -12 10 -89 21 -262 36 l-73 7 0 338 0 337 -95 0 -95 0 0 -454z"/>
+                            <path d="M9168 268 c-74 -61 -59 -161 29 -194 40 -16 46 -16 86 0 44 16 77 57 77 94 0 39 -23 83 -51 97 -34 18 -120 20 -141 3z"/>
+                            </g>
+                            </svg>
+                    </span>
+                </a>
+                
+                <div class="header__interface--right">  
+                    <div class="header__social">
+                        <a href="#" class="header__social--item social__item--linkedin">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="header__social--item social__item--facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="header__social--item social__item--instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="header__social--item social__item--telegram">
+                            <i class="fab fa-telegram-plane"></i>
+                        </a>
+                    </div>
+
+                    <div class="header__subscription">
+                        <span class="header__subscription--text">
+                            подписаться
+                        </span>
+                        <span class="header__subscription--image">
+                            <svg class="subscription__svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" xml:space="preserve">
+                                <g>
+                                    <g>
+                                        <path d="M506.134,241.843c-0.006-0.006-0.011-0.013-0.018-0.019l-104.504-104c-7.829-7.791-20.492-7.762-28.285,0.068
+                                            c-7.792,7.829-7.762,20.492,0.067,28.284L443.558,236H20c-11.046,0-20,8.954-20,20c0,11.046,8.954,20,20,20h423.557
+                                            l-70.162,69.824c-7.829,7.792-7.859,20.455-0.067,28.284c7.793,7.831,20.457,7.858,28.285,0.068l104.504-104
+                                            c0.006-0.006,0.011-0.013,0.018-0.019C513.968,262.339,513.943,249.635,506.134,241.843z"/>
+                                    </g>
+                                </g>
+                            </svg>
+                        </span>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="menu">
+
+            <div class="container">
+
+                <nav class="nav menu__nav">
+                    <a href="#" class="nav__item">
+                        Экономика
+                        <ul class="nav__item--ul categories__submenu">
+                            <div class="categories__submenu-items">
+                              <li class="categories__submenu-item">
+                                <a href="#">Казахстан</a>
+                              </li>
+                              <li class="categories__submenu-item">
+                                <a href="#">Мир</a>
+                              </li>
+                              <li class="categories__submenu-item">
+                                <a href="#">Инвестиции</a>
+                              </li>
+                              <li class="categories__submenu-item">
+                                <a href="#">Бизнес</a>
+                              <li class="categories__submenu-item categories__submenu-item--active">
+                                <a href="#">
+                                    Индустрии
+                                    <ul class="nav__item--ul categories__submenu categories__submenu--three">
+                                        <div class="categories__submenu-items">
+                                          <li class="categories__submenu-item">
+                                            <a href="#">IT</a>
+                                          </li>
+                                          <li class="categories__submenu-item">
+                                            <a href="#">Фармацевтика</a>
+                                          </li>
+                                          <li class="categories__submenu-item">
+                                            <a href="#">Консалтинг</a>
+                                          </li>
+                                          <li class="categories__submenu-item">
+                                            <a href="#">Ресторанный и Гостиничный бизнес</a>
+                                          </li>
+                                          <li class="categories__submenu-item">
+                                            <a href="#">Финансы</a>
+                                          </li>
+                                          <li class="categories__submenu-item">
+                                            <a href="#">Потребительские товары</a>
+                                          </li>
+                                          <li class="categories__submenu-item">
+                                            <a href="#">Аналитика</a>
+                                          </li>
+                                        </div>
+                                    </ul>
+                                </a>
+                              </li>
+                            </div>
+                        </ul>
+                    </a>
+                    <a href="" class="nav__item">
+                        Технологии
+                    </a>
+                    <a href="" class="nav__item">
+                        LifeStyle
+                    </a>
+                    <a href="" class="nav__item">
+                        Женщины и…
+                        <ul class="nav__item--ul categories__submenu">
+                            <div class="categories__submenu-items">
+                              <li class="categories__submenu-item">
+                                <a href="#">Бизнес</a>
+                              </li>
+                              <li class="categories__submenu-item">
+                                <a href="#">Лидерство</a>
+                              </li>
+                              <li class="categories__submenu-item">
+                                <a href="#">Дом</a>
+                              </li>
+                              <li class="categories__submenu-item">
+                                <a href="#">Родительство</a>
+                              </li>
+                              <li class="categories__submenu-item">
+                                <a href="#">Мода</a>
+                              </li>
+                              <li class="categories__submenu-item">
+                                <a href="#">Спорт</a>
+                              </li>
+                              <li class="categories__submenu-item">
+                                <a href="#">Искусство</a>
+                              </li>
+                            </div>
+                        </ul>
+                    </a>
+                    <a href="" class="nav__item">
+                        Проекты
+                        <ul class="nav__item--ul categories__submenu">
+                            <div class="categories__submenu-items">
+                              <li class="categories__submenu-item">
+                                <a href="#">
+                                    Награды ЕВРОБАК
+                                    <ul class="nav__item--ul categories__submenu categories__submenu--three">
+                                        <div class="categories__submenu-items">
+                                          <li class="categories__submenu-item">
+                                            <a href="#">Социальная ответственность</a>
+                                          </li>
+                                          <li class="categories__submenu-item">
+                                            <a href="#">HR</a>
+                                          </li>
+                                          <li class="categories__submenu-item">
+                                            <a href="#">Маркетинг и PR</a>
+                                          </li>
+                                          <li class="categories__submenu-item">
+                                            <a href="#">Digital</a>
+                                          </li>
+                                        </div>
+                                    </ul>
+                                </a>
+                              </li>
+                              <li class="categories__submenu-item">
+                                <a href="#">Университет HR</a>
+                              </li>
+                              <li class="categories__submenu-item">
+                                <a href="#">Университет Маркетинг и PR</a>
+                              </li>
+                            </div>
+                        </ul>
+                    </a>
+                    <a href="" class="nav__item">
+                        Интервью
+                        <ul class="nav__item--ul categories__submenu">
+                            <div class="categories__submenu-items">
+                              <li class="categories__submenu-item">
+                                <a href="#">Мнения</a>
+                              </li>
+                              <li class="categories__submenu-item">
+                                <a href="#">Интервью</a>
+                              </li>
+                              <li class="categories__submenu-item">
+                                <a href="#">Подкасты</a>
+                              </li>
+                            </div>
+                        </ul>
+                    </a>
+                    <a href="" class="nav__item">
+                        Мероприятия
+                        <ul class="nav__item--ul categories__submenu">
+                            <div class="categories__submenu-items">
+                              <li class="categories__submenu-item">
+                                <a href="#">
+                                    ЕВРОБАК
+                                    <ul class="nav__item--ul categories__submenu categories__submenu--three">
+                                        <div class="categories__submenu-items">
+                                          <li class="categories__submenu-item">
+                                            <a href="#">Регистрация</a>
+                                          </li>
+                                        </div>
+                                    </ul>
+                                </a>
+                              </li>
+                              <li class="categories__submenu-item">
+                                <a href="#">
+                                    WM
+                                    <ul class="nav__item--ul categories__submenu categories__submenu--three">
+                                        <div class="categories__submenu-items">
+                                          <li class="categories__submenu-item">
+                                            <a href="#">Регистрация</a>
+                                          </li>
+                                        </div>
+                                    </ul>
+                                </a>
+                              </li>
+                            </div>
+                        </ul>
+                    </a>
+                </nav>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+
+
+    <script src="plugin/fontAwesome/all.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>

@@ -1,0 +1,145 @@
+.header
+    position: sticky
+    left: 0
+    top: 0
+    width: 100%
+    padding: 25px 0
+    z-index: 99
+    &__interface
+        display: flex
+        align-items: center
+        justify-content: space-between
+        &--left,
+        &--right
+            display: flex
+            align-items: center
+    &__search
+        &--box
+            position: relative
+            width: 30px
+            height: 30px
+            transition: all .5s cubic-bezier(0.68, -0.55, 0.265, 1.55)
+            &-active
+                width: 350px
+                height: 40px
+        &--input
+            height: 100%
+            width: 100%
+            padding: 0 60px 0 20px
+            font-size: 16px
+            background: $secondary
+            border-radius: 50px
+            outline: none
+            border: none
+            opacity: 0
+            transition: all .5s cubic-bezier(0.68, -0.55, 0.265, 1.55)
+            &-active
+                opacity: 1
+        &--btn
+            position: absolute
+            top: 50%
+            right: 0px
+            width: 30px
+            height: 30px
+            font-size: 20px
+            text-align: center
+            line-height: 30px
+            border-radius: 50px
+            color: $dark
+            background: transparent
+            transform: translateY(-50%)
+            cursor: pointer
+            transition: all .5s cubic-bezier(0.68, -0.55, 0.265, 1.55)
+            &-active
+                position: absolute
+                top: 50%
+                right: 0px
+                width: 40px
+                height: 40px
+                color: $white
+                font-size: 18px
+                background: $primary
+                line-height: 40px
+                border-radius: 50px
+                transform: translateY(-50%) rotate(360deg)
+        &--cancel
+            position: absolute
+            top: 50%
+            right: -40px
+            display: none
+            font-size: 20px
+            transform: translateY(-50%)
+            cursor: pointer
+    &__social
+        display: flex
+        align-items: center
+        margin-right: 30px
+        &--item
+            display: flex
+            align-items: center
+            justify-content: center
+            width: 30px
+            height: 30px
+            margin-left: 15px
+            font-size: 18px
+            border-radius: 5px
+            color: $primary
+            background: $secondary
+            &:hover
+                background: $primary
+                color: $white
+    &__subscription
+        display: flex
+        align-items: center
+        cursor: pointer
+        &--image,
+        &--text
+            display: block
+        &--text
+            margin-right: 20px
+            font-weight: 500
+            font-size: 18px
+            color: $dark
+        &--image
+            display: flex
+            align-items: center
+            justify-content: center
+            width: 30px
+            height: 30px
+            margin-left: -1px
+            border-radius: 50px
+            border: 1px solid $secondary
+.language
+    &__version
+        margin-right: 30px
+        &--item
+            font-weight: 700
+            font-size: 18px
+            color: $secondary
+            &-active
+                color: $primary
+.logo
+    &__link
+        display: block
+    &__svg
+        fill: $primary
+.subscription
+    &__svg
+        width: 18px
+        height: 18px
+        fill: $dark
+.nav
+    &__item
+        display: block
+.categories
+    &__submenu
+        &-item
+            &--active
+                display: block
+.categories
+    &__submenu
+        display: none
+        &--three
+            display: none
+            &-active
+                display: block
