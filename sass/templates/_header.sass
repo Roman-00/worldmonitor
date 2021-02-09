@@ -128,18 +128,70 @@
         width: 18px
         height: 18px
         fill: $dark
+.menu
+    margin-top: 25px
+    border-top: 2px solid $secondary
+    border-bottom: 2px solid $secondary
 .nav
+    display: flex
+    justify-content: space-around
+    align-items: center
     &__item
-        display: block
-.categories
-    &__submenu
-        &-item
-            &--active
+        position: relative
+        display: flex
+        align-items: center
+        font-weight: bold
+        font-size: 18px
+        line-height: 22px
+        padding: 15px 0
+        text-transform: uppercase
+        color: $dark
+        transition: .2s ease
+        &:hover
+            color: $primary
+        &::after
+            content: ''
+            position: absolute
+            left: 50%
+            width: 0%
+            height: 2px
+            display: block
+            margin-top: 54px
+            -webkit-transition: width.3s ease-in-out
+            -moz-transition: width .3s ease-in-out
+            transition: width .3s ease-in-out
+            -webkit-transform: translateX(-50%)
+            -moz-transform: translateX(-50%)
+            transform: traanslateX(-50%)
+            background: $primary
+        &--block
+            position: relative
+            &:not(:first-of-type):not(:last-of-type) .nav__item--submenu
+                left: -50%
+                border-radius: 0 0 3px 3px
+            &:first-of-type .nav__item--submenu
+                left: 0
+                border-radius: 0 0 3px 0
+            &:last-of-type .nav__item--submenu
+                right: 0
+                border-radius: 0 0 0 3px
+            &:hover .nav__item--submenu
                 display: block
-.categories
-    &__submenu
-        display: none
-        &--three
+        &--submenu
+            position: absolute
+            margin-top: -1px
+            margin-left: -3px
             display: none
-            &-active
-                display: block
+            overflow: hidden
+            background: $white
+            min-width: 200%
+            padding: 10px
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0,0,0, 0.23)
+            z-index: 5
+.fa-sort-up
+    margin-bottom: 5px
+    margin-left: 10px
+    transform: rotate(180deg)
+.nav__item:hover:after,
+.nav__item:focus:after
+    width: 100%
