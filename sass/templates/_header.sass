@@ -190,6 +190,13 @@
             padding: 10px
             box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0,0,0, 0.23)
             z-index: 5
+            &-2
+                display: none
+                margin-left: 20px
+                transition: .3s ease
+                &--active
+                    display: block !important
+                    transition: .3s ease
 .fa-sort-up
     margin-bottom: 5px
     margin-left: 10px
@@ -197,3 +204,34 @@
 .nav__item:hover:after,
 .nav__item:focus:after
     width: 100%
+.submenu
+    &__item
+        display: block
+        padding: 10px 0
+        font-weight: bold
+        font-size: 16px
+        line-height: 20px
+        text-transform: uppercase
+        color: $subcolor
+        &--select
+            display: flex
+            align-items: center
+        &--2
+            display: block
+            padding: 5px 0
+            font-weight: 500
+            font-size: 14px
+            line-height: 20px
+            color: $subcolor
+.fa
+    &-sort
+        &-down
+            margin: 0 0 5px 5px
+.menu
+    &__mobile
+        &--btn
+            display: none
+.mob
+    &__lg
+        &--version
+            display: none

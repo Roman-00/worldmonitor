@@ -23,30 +23,22 @@ document.addEventListener('DOMContentLoaded', () => {
             });
     };
 
-    const menuShow = () => {
-        const categoriesSubmenuItemActive = document.querySelector('.categories__submenu-item--active');
-        const categoriesSubmenuThree = document.querySelector('.categories__submenu--three');
-        const navItem = document.querySelector('.nav__item');
-        const categoriesSubmenu = document.querySelector('.categories__submenu');
+    const menuSubMenu = () => {
 
-        categoriesSubmenuItemActive.addEventListener('click', () => {
-            categoriesSubmenuThree.classList.toggle('categories__submenu--three-active');
+        const submenuItemSelect = document.querySelector('.submenu__item--select');
+        const navItemSubmenu2 = document.querySelector('.nav__item--submenu-2');
+
+        submenuItemSelect.addEventListener('click', () => {
+            navItemSubmenu2.classList.toggle('nav__item--submenu-2--active');
         });
 
-        navItem.addEventListener('mouseenter', () => {
-            categoriesSubmenu.style.display = 'block';
-        });
-
-        navItem.addEventListener('mouseover', () => {
-            categoriesSubmenu.style.display = 'none';
-        });
     };
 
 
     /* Инициализируем все функции скриптов */
     const init = () => {
         searchFunc();
-        menuShow();
+        menuSubMenu();
     };
 
     init();
