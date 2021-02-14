@@ -34,6 +34,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
     };
 
+    const swiper = new Swiper('.swiper-container', {
+        // Optional parameters
+        direction: 'horizontal',
+        loop: true,
+        slidesPerView: 2,
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+        },
+    });
+
 
     /* Инициализируем все функции скриптов */
     const init = () => {
