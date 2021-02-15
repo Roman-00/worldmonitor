@@ -6,12 +6,35 @@
                     width: 290px
             &--cancel
                 right: -25px
-    
+    .footer
+        &__menu
+            flex-wrap: wrap
+@media screen and (max-width: 1450px)
+    .footer
+        &__contacts
+            margin-top: 20px
 @media screen and (max-width: 1375px)
     .nav
         justify-content: space-between
         &__item
             font-size: 16px
+    .copyright
+        &__text
+            font-size: 14px
+    .material
+        &__block
+            &--link
+                font-size: 14px
+    .cookies
+        &__block
+            &--text
+                font-size: 14px
+@media screen and (max-width: 1246px)
+    .footer
+        &__address
+            margin-top: 20px
+        &__link
+            flex-wrap: wrap
 @media screen and (max-width: 1170px)
     .nav
         &__item
@@ -36,6 +59,11 @@
     .nav
         &__item
             font-size: 12px
+@media screen and (max-width: 915px)
+    .footer
+        &__menu
+            &--list
+                margin-top: 20px
 @media screen and (max-width:875px)
     .header
         &__search
@@ -47,6 +75,9 @@
                 display: block
                 font-size: 18px
                 margin-right: 10px
+    .mobile
+        &__menu
+            display: flex
 @media screen and (max-width:761px)
     .language
         &__version
@@ -68,10 +99,57 @@
         &__lg
             &--version
                 display: block
+@media screen and (max-width: 645px)
+    .card
+        width: 200px
+        padding: 11px
 @media screen and (max-width:575px)
     .logo
         &__svg
             width: 200px !important
+    .swiper-container
+        max-width: 475px
+    .partners
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
+    .card
+        margin: auto
+    .footer
+        &__menu
+            flex-direction: column
+            justify-content: center
+            align-items: center
+            &--list
+                display: flex
+                flex-direction: column
+                align-items: center
+                justify-content: center
+        &__address
+            display: flex
+            flex-direction: column
+            align-items: center
+            justify-content: center
+            &--text
+                text-align: center
+        &__contacts
+            display: flex
+            flex-direction: column
+            align-items: center
+            justify-content: center
+        &__link
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-items: center
+    .material
+        &__block
+            &--link
+                display: block
+                text-align: center
+                &::after
+                    display: none
 @media screen and (max-width:445px)
     .logo
         &__svg

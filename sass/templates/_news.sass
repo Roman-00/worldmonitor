@@ -1,0 +1,88 @@
+.news
+    position: relative
+    padding: 0 0 25px 0
+    &__title
+        margin-bottom: 20px
+        font-weight: bold
+        font-size: 40px
+        line-height: 48px
+.breadcumps
+    margin-bottom: 18px
+    &__link
+        font-weight: 500
+        font-size: 16px
+        line-height: 19px
+        color: $dark
+        a
+            margin: 0 15px
+            text-decoration: none
+            color: $dark
+            &:first-of-type
+                margin-left: 0
+                cursor: pointer
+.article
+    &__container
+        display: grid
+        grid-template-columns: repeat(auto-fill, minmax(265px, 1fr))
+        gap: 30px
+        max-width: 1200px
+    &__image
+        margin: 0
+        padding: 0
+        overflow: hidden
+        img
+            max-width: 100%
+            height: auto
+            border-radius: 10px 10px 0 0
+    &__card
+        background: $white
+        border-radius: 10px
+        transition: 0.3s
+        box-shadow: 0px 24px 48px rgba(103, 103, 103, 0.2)
+        &:hover
+            box-shadow: 0 4px 20px 0 rgba(34, 68, 123, 0.2)
+            cursor: pointer
+    &__content
+        padding: 20px
+.card
+    &__title
+        max-width: 190px
+        margin-bottom: 15px
+        font-weight: bold
+        font-size: 16px
+        line-height: 25px
+        color: $dark
+    &__excerpt
+        max-width: 165px
+        margin-bottom: 15px
+        font-weight: normal
+        font-size: 14px
+        line-height: 20px
+        color: $cex
+    &__info
+        display: flex
+        align-items: center
+        justify-content: space-between
+        widows: 100%
+        .view
+            margin-left: auto
+            margin-right: 15px
+.author
+    display: flex
+    align-items: center
+.date
+    display: block
+.sidebar
+    &__news
+        &--page
+            width: 380px
+            padding: 30px 25px
+            border-radius: 10px
+            background: $primary
+            &-title
+                position: relative
+                font-weight: 900
+                font-size: 16px
+                line-height: 20px
+                text-align: center
+                color: $white
