@@ -990,7 +990,7 @@ template {
 
 .news {
   position: relative;
-  padding: 0 0 25px 0; }
+  padding: 0 0 29px 0; }
   .news__title {
     margin-bottom: 20px;
     font-weight: bold;
@@ -1016,7 +1016,7 @@ template {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(265px, 1fr));
   gap: 30px;
-  max-width: 1200px; }
+  max-width: 1180px; }
 
 .article__image {
   margin: 0;
@@ -1085,7 +1085,23 @@ template {
     color: #fff; }
 
 .sidebar__news--page {
-  position: relative; }
+  position: relative;
+  max-width: 320px;
+  max-height: 465px; }
+  .sidebar__news--page-title {
+    position: relative;
+    padding-bottom: 25px; }
+    .sidebar__news--page-title::before {
+      content: '';
+      position: absolute;
+      left: -30px;
+      right: 0;
+      bottom: 0;
+      display: block;
+      width: 385px;
+      height: 2px;
+      margin-top: 25px;
+      background: #fff; }
 
 .sidebar__card--title {
   max-width: 170px;
@@ -1117,21 +1133,32 @@ template {
     height: auto; }
 
 .sidebar__article--card {
+  position: relative;
   display: flex;
-  align-items: center; }
+  align-items: center;
+  padding-top: 25px;
+  padding-bottom: 25px; }
+  .sidebar__article--card:first-of-type {
+    padding-top: 0px; }
   .sidebar__article--card::before {
     content: '';
     position: absolute;
-    left: 0;
+    left: -30px;
     right: 0;
     bottom: 0;
     display: block;
-    width: 100%;
+    width: 385px;
     height: 2px;
+    margin-top: 25px;
     background: #fff; }
 
 .sidebar__article--container {
   margin-top: 25px; }
+
+.content__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; }
 
 @media screen and (max-width: 1576px) {
   .header__search--box-active {

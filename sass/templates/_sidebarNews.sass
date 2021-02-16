@@ -2,6 +2,22 @@
     &__news
         &--page
             position: relative
+            max-width: 320px
+            max-height: 465px
+            &-title
+                position: relative
+                padding-bottom: 25px
+                &::before
+                    content: ''
+                    position: absolute
+                    left: -30px
+                    right: 0
+                    bottom: 0
+                    display: block
+                    width: 385px
+                    height: 2px
+                    margin-top: 25px
+                    background: $white
     &__card
         &--title
             max-width: 170px
@@ -33,17 +49,28 @@
                 max-width: 80px
                 height: auto
         &--card
+            position: relative
             display: flex
             align-items: center
+            padding-top: 25px
+            padding-bottom: 25px
+            &:first-of-type
+                padding-top: 0px
             &::before
                 content: ''
                 position: absolute
-                left: 0
+                left: -30px
                 right: 0
                 bottom: 0
                 display: block
-                width: 100%
+                width: 385px
                 height: 2px
+                margin-top: 25px
                 background: $white
         &--container
             margin-top: 25px
+.content
+    &__wrapper
+        display: flex
+        justify-content: space-between
+        align-items: flex-start
