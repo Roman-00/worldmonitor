@@ -1084,6 +1084,55 @@ template {
     text-align: center;
     color: #fff; }
 
+.sidebar__news--page {
+  position: relative; }
+
+.sidebar__card--title {
+  max-width: 170px;
+  margin-left: 20px;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  color: #fff; }
+
+.sidebar__card--info {
+  margin-left: 20px;
+  margin-top: 10px; }
+  .sidebar__card--info .view .fa-eye {
+    color: #fff; }
+  .sidebar__card--info .view .view__count {
+    color: #fff; }
+
+.sidebar__article--image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  margin: 0;
+  padding: 0;
+  overflow: hidden; }
+  .sidebar__article--image img {
+    max-width: 80px;
+    height: auto; }
+
+.sidebar__article--card {
+  display: flex;
+  align-items: center; }
+  .sidebar__article--card::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: #fff; }
+
+.sidebar__article--container {
+  margin-top: 25px; }
+
 @media screen and (max-width: 1576px) {
   .header__search--box-active {
     width: 290px; }
