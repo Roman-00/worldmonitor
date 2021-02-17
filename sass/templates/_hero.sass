@@ -1,6 +1,6 @@
 .hero
     position: relative
-    padding: 0 0 25px 0
+    padding: 5px 0 28px 0
 .main
     &__grid
         display: flex
@@ -11,7 +11,7 @@
         position: relative
         display: grid
         grid-template-columns: 1fr 1fr 1fr
-        grid-gap: 25px
+        grid-gap: 20px
         max-width: 700px
         &--item
             overflow: hidden
@@ -173,34 +173,76 @@
     text-transform: uppercase
 .fa-long-arrow-alt-right
     margin-left: 10px
-.archive
-    &__link
-        &--btn
-            display: flex
-            align-items: center
-            padding: 12px 16px
-            font-weight: 700
-            font-size: 20px
-            line-height: 24px
-            border: 2px solid $primary
-            border-radius: 10px
-            color: $dark
-        &--icon
-            display: flex
-            align-items: center
-            justify-content: center
-            padding: 15px
-            margin-right: 30px
-            border: 2px solid $primary
-            border-radius: 50%
-        &--text
-            font-weight: bold
-            font-size: 15px
-            line-height: 18px
 .sidebar
     &__front
         &--page
+            position: relative
+            display: flex
+            flex-direction: column
+            justify-content: space-between
+            align-items: center
             width: 20%
 .aside-ad
     margin-bottom: 25px
     cursor: pointer
+.archive
+    &__btn
+        display: flex
+        justify-content: center
+        align-items: center
+        padding: 10px 20px
+        border: 2px solid $primary
+        border-radius: 10px
+        cursor: pointer
+        &--text
+            display: block
+            margin-left: 20px
+            font-weight: bold
+            font-size: 20px
+            line-height: 24px
+            color: $dark
+        &--image
+            display: flex
+            justify-content: center
+            align-items: center
+            width: 50px
+            height: 50px
+            border: 2px solid $primary
+            border-radius: 100px
+        .fa
+            &-archive
+                display: block
+                font-size: 25px
+                color: $primary
+.website
+    display: flex
+    justify-content: center
+    align-items: center
+    padding: 10px 45px
+    border: 2px solid $primary
+    border-radius: 10px
+    &__image
+        display: flex
+        justify-content: center
+        align-items: center
+        width: 50px
+        height: 50px
+        margin-right: 25px
+        border: 2px solid $primary
+        border-radius: 100px
+        .fa-globe
+            font-size: 25px
+            color: $primary
+    &__info
+        &--desc
+            display: block
+            font-weight: bold
+            font-size: 15px
+            line-height: 18px
+            color: $dark
+        &--title
+            display: block
+            font-weight: bold
+            font-size: 20px
+            line-height: 24px
+            color: $dark
