@@ -17,6 +17,10 @@ html {
   font-size: 14px; }
 
 body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
   font-family: 'Pfagora Sans Pro', sans-serif;
   font-weight: 400;
   font-size: 1rem; }
@@ -34,6 +38,14 @@ a {
   transition: 0.5s; }
   a:hover {
     color: #000055; }
+
+.section__title {
+  display: block;
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 48px;
+  color: #000; }
 
 @font-face {
   font-family: 'Pfagora Sans Pro';
@@ -1159,6 +1171,63 @@ template {
   display: flex;
   justify-content: space-between;
   align-items: flex-start; }
+
+.contacts {
+  position: relative;
+  padding-bottom: 25px; }
+  .contacts__title {
+    display: block;
+    margin-bottom: 30px;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 48px;
+    color: #000; }
+  .contacts__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: #000055;
+    color: #fff;
+    font-size: 22px;
+    border-radius: 10px; }
+  .contacts__text--phone, .contacts__text--email, .contacts__text--address {
+    display: flex;
+    align-items: flex-start; }
+  .contacts__text--title {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px; }
+  .contacts__text--info {
+    margin-left: 20px; }
+  .contacts__text--address, .contacts__text--email {
+    margin-bottom: 50px; }
+
+.text__address--desc {
+  display: block;
+  max-width: 225px;
+  margin-top: 5px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px; }
+
+.text__email--link {
+  display: block;
+  margin-top: 5px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #000; }
+
+.text__phone--link {
+  display: block;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #000; }
 
 @media screen and (max-width: 1576px) {
   .header__search--box-active {

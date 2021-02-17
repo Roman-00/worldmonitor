@@ -6,6 +6,10 @@
 html
   font-size: 14px
 body
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  min-height: 100vh
   font-family: 'Pfagora Sans Pro', sans-serif
   font-weight: 400
   font-size: 1rem
@@ -20,3 +24,11 @@ a
     transition: 0.5s
     &:hover
       color: $primary
+.section
+  &__title
+    display: block
+    margin-bottom: 20px
+    font-weight: bold
+    font-size: 40px
+    line-height: 48px
+    color: $dark
