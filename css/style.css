@@ -51,6 +51,9 @@ figure {
   line-height: 48px;
   color: #000; }
 
+.text-d {
+  color: #000 !important; }
+
 @font-face {
   font-family: 'Pfagora Sans Pro';
   src: url("../font/PFAGORASANSPRO-REG.woff2") format("woff2"), url("../font/PFAGORASANSPRO-REG.woff") format("woff");
