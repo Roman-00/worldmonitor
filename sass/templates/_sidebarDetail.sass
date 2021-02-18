@@ -1,0 +1,56 @@
+.sidebar
+    &__detail
+        &--page
+            max-width: 20%
+        &--category
+            max-width: 385px
+            padding: 25px
+            margin-bottom: 50px
+            box-shadow: 1px 6px 30px rgba(0, 0, 0, 0.25)
+            border-radius: 10px
+            &--title
+                display: block
+                margin-bottom: 30px
+                font-weight: bold
+                font-size: 20px
+                line-height: 20px
+                color: $primary
+            &--link
+                display: block
+                padding: 10px 0
+                font-weight: bold
+                font-size: 16px
+                line-height: 30px
+                border-bottom: 2px solid $secondary
+                text-decoration: none
+        &--posts
+            max-width: 385px
+            padding: 25px
+            margin-bottom: 50px
+            box-shadow: 1px 6px 30px rgba(0, 0, 0, 0.25)
+            border-radius: 10px
+    &__posts
+        &--article
+            &--card
+                display: flex
+                align-items: center
+                margin-bottom: 20px
+            &--content
+                margin-left: 20px
+            &--title
+                &--text
+                    display: block
+                    max-width: 170px
+                    font-weight: normal
+                    font-size: 14px
+                    line-height: 18px
+                    color: #4B5157
+            &--image
+                border-radius: 10px
+.tag
+    &--n
+        color: $primary
+    &--g
+        color: $tagg
+    &--p
+        color: $tagp

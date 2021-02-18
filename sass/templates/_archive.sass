@@ -1,0 +1,59 @@
+.archive
+    position: relative
+    padding-bottom: 30px
+    &__container    
+        display: flex
+        align-items: flex-start
+        justify-content: space-between
+    &__section
+        &--title
+            margin-bottom: 30px
+    &__title
+        display: block
+        font-weight: bold
+        font-size: 40px
+        line-height: 48px
+    &__article
+        &--content
+            padding: 20px
+        &--card
+            max-width: 260px
+            background: $white
+            border-radius: 10px
+            box-shadow: 0px 24px 48px rgba(103, 103, 103, 0.2)
+        &--title
+            display: block
+            margin: 15px 0
+            font-weight: bold
+            font-size: 16px
+            line-height: 25px
+        &--container
+            display: grid
+            max-width: 1190px
+            grid-template-columns: repeat(auto-fill, minmax(260px, 1fr))
+            gap: 30px
+        &--excerpt
+            display: block
+            max-width: 160px
+            margin: 10px 0 20px 0
+            font-weight: normal
+            font-size: 16px
+            line-height: 20px
+        &--image
+            margin: 0
+            padding: 0
+            overflow: hidden
+            img
+                max-width: 100%
+                height: auto
+                border-radius: 20px 20px 0 0
+        &--link
+            display: flex
+            align-items: center
+            justify-content: center
+            padding: 12px 15px
+            color: $white
+            background: $primary
+            border-radius: 100px
+            &:hover
+                color: $white
