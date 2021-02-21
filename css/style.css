@@ -821,7 +821,8 @@ template {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between; }
+  justify-content: space-between;
+  margin: 0 20px; }
   .block__magazine--item {
     display: flex;
     flex-direction: column;
@@ -869,7 +870,7 @@ template {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  width: 20%; }
+  width: 320px; }
 
 .aside-ad {
   margin-bottom: 25px;
@@ -1728,7 +1729,23 @@ template {
   .archive__article--wrap {
     grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
     gap: 30px;
-    max-width: 950px; } }
+    max-width: 950px; }
+  .tag {
+    padding: 8px 5px;
+    font-size: 10px; }
+  .article__grid {
+    grid-gap: 15px;
+    max-width: 640px; }
+    .article__grid--item-1 {
+      max-width: 420px; }
+    .article__grid--item-2 {
+      max-width: 210px; }
+    .article__grid--item-default {
+      max-width: 200px; }
+      .article__grid--item-default .article__grid--title {
+        font-size: 18px; }
+      .article__grid--item-default .article__grid--excerpt {
+        font-size: 12px; } }
 
 @media screen and (max-width: 1576px) {
   .header__search--box-active {
@@ -1736,7 +1753,17 @@ template {
   .header__search--cancel {
     right: -25px; }
   .footer__menu {
-    flex-wrap: wrap; } }
+    flex-wrap: wrap; }
+  .archive__btn--text {
+    font-size: 16px; }
+  .website__info--title {
+    font-size: 18px; }
+  .website__info--desc {
+    font-size: 14px; }
+  .block__magazine--button-btn {
+    font-size: 14px; }
+  .sidebar__front--page {
+    max-width: 310px; } }
 
 @media screen and (max-width: 1520px) {
   .article__container {
@@ -1843,7 +1870,7 @@ template {
       font-size: 18px;
       margin-right: 10px; }
   .mobile__menu {
-    display: none; } }
+    display: block; } }
 
 @media screen and (max-width: 761px) {
   .language__version--item {

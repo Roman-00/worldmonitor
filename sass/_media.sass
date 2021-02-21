@@ -17,7 +17,28 @@
                 grid-template-columns: repeat(auto-fill, minmax(230px, 1fr))
                 gap: 30px
                 max-width: 950px
-    
+    .tag
+        padding: 8px 5px
+        font-size: 10px
+    .article
+        &__grid
+            grid-gap: 15px
+            max-width: 640px
+            &--item
+                &-1
+                    max-width: 420px
+                &-2
+                    max-width: 210px
+                &-default
+                    max-width: 200px
+                    .article
+                        &__grid
+                            &--title
+                                font-size: 18px
+                    .article
+                        &__grid
+                            &--excerpt
+                                font-size: 12px
 @media screen and (max-width: 1576px)
     .header
         &__search
@@ -29,6 +50,25 @@
     .footer
         &__menu
             flex-wrap: wrap
+    .archive
+        &__btn
+            &--text
+                font-size: 16px
+    .website
+        &__info
+            &--title
+                font-size: 18px
+            &--desc
+                font-size: 14px
+    .block
+        &__magazine
+            &--button
+                &-btn 
+                    font-size: 14px
+    .sidebar
+        &__front
+            &--page
+                max-width: 310px
 @media screen and ( max-width: 1520px )
     .article
         &__container
@@ -162,7 +202,7 @@
                 margin-right: 10px
     .mobile
         &__menu
-            display: none
+            display: block
 @media screen and (max-width:761px)
     .language
         &__version
