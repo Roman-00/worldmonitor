@@ -6,6 +6,8 @@
         font-weight: bold
         font-size: 40px
         line-height: 48px
+    &__block
+        max-width: calc( 100% - 15px )
 .breadcumps
     margin-bottom: 18px
     &__link
@@ -24,7 +26,7 @@
     &__container
         display: grid
         grid-template-columns: repeat(auto-fill, minmax(265px, 1fr))
-        gap: 30px
+        gap: 20px
         max-width: 1180px
     &__image
         margin: 0
@@ -76,7 +78,8 @@
     &__news
         &--page
             width: 380px
-            padding: 30px 25px
+            padding: 25px 25px
+            margin-top: 14px
             border-radius: 10px
             background: $primary
             &-title

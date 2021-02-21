@@ -1,3 +1,23 @@
+@media screen and ( max-width: 1920px )
+    .content
+        &__wrapper
+            &--right
+                display: block
+@media screen and ( max-width: 1670px )
+    .article
+        &__container
+            grid-template-columns: repeat(auto-fill, minmax(230px, 1fr))
+    .sidebar
+        &__news
+            &--page
+                max-height: 455px
+    .archive
+        &__article
+            &--wrap
+                grid-template-columns: repeat(auto-fill, minmax(230px, 1fr))
+                gap: 30px
+                max-width: 950px
+    
 @media screen and (max-width: 1576px)
     .header
         &__search
@@ -9,7 +29,32 @@
     .footer
         &__menu
             flex-wrap: wrap
+@media screen and ( max-width: 1520px )
+    .article
+        &__container
+            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr))
+            max-width: 800px
+    .sidebar__news--page
+        margin-top: 28px
 @media screen and (max-width: 1450px)
+    .article
+        &__container
+            max-width: 900px
+    .sidebar
+        &__news
+            &--page
+                margin-top: 7px
+    .archive
+        &__article
+            &--wrap
+                gap: 20px
+                max-width: 800px
+    .sidebar
+        &__archive
+            &--page
+                width: 250px
+            &--block
+                width: 250px
     .footer
         &__contacts
             margin-top: 20px
@@ -30,6 +75,28 @@
             &--text
                 font-size: 14px
 @media screen and (max-width: 1246px)
+    .content
+        &__wrapper
+            &--right
+                display: none
+    .article
+        &__container
+            grid-template-columns: repeat(auto-fill, minmax(265px, 1fr))
+            max-width: 100%
+    .archive
+        &__container
+            display: block
+            max-width: 100%
+        &__article
+            &--container
+                max-width: 100%
+            &--wrap
+                max-width: 100%
+                margin-right: 0
+            &--card
+                max-width: 260px
+    .sidebar__archive--page
+        display: none
     .footer
         &__address
             margin-top: 20px
@@ -118,7 +185,7 @@
         margin: auto
     .footer
         &__menu
-            flex-direction: column
+            //flex-direction: column
             justify-content: center
             align-items: center
             &--list
@@ -143,6 +210,10 @@
             flex-direction: column
             justify-content: center
             align-items: center
+    .copyright
+        &__text
+            text-align: center
+            display: flex
     .material
         &__block
             &--link
