@@ -36,6 +36,11 @@
             max-width: 800px
     .sidebar__news--page
         margin-top: 28px
+@media screen and (max-width: 1476px)
+    .detail
+        &__grid
+            &--container
+                max-width: 800px
 @media screen and (max-width: 1450px)
     .article
         &__container
@@ -55,6 +60,10 @@
                 width: 250px
             &--block
                 width: 250px
+    .detail
+        &__grid
+            &--container
+                max-width: 750px
     .footer
         &__contacts
             margin-top: 20px
@@ -74,6 +83,9 @@
         &__block
             &--text
                 font-size: 14px
+    .contacts
+        &__form
+            margin-top: 30px
 @media screen and (max-width: 1246px)
     .content
         &__wrapper
@@ -95,8 +107,14 @@
                 margin-right: 0
             &--card
                 max-width: 260px
+    .sidebar
+        &__detail
+            &--page
+                display: none
     .sidebar__archive--page
         display: none
+    #map
+        margin-top: 30px
     .footer
         &__address
             margin-top: 20px
@@ -155,6 +173,9 @@
             &--text
                 margin-right: 15px
                 font-size: 16px
+    #map
+        width: 500px
+        height: 300px
 @media screen and (max-width:720px)
     .header
         &__subscription
@@ -166,10 +187,23 @@
         &__lg
             &--version
                 display: block
+    .language
+        &__version
+            margin-right: 0
 @media screen and (max-width: 645px)
     .card
         width: 200px
         padding: 11px
+    #map
+        width: 400px
+    .contacts
+        &__wrap
+            flex-direction: column
+            align-items: center
+        &__map
+            margin-right: 0
+        &__text
+            margin-right: 0
 @media screen and (max-width:575px)
     .logo
         &__svg
@@ -183,6 +217,18 @@
         justify-content: center
     .card
         margin: auto
+    .form
+        &__input
+            width: 100%
+            max-width: 420px
+        &__policy
+            margin-top: 30px
+            max-width: 100%
+        &__interface
+            &--group
+                flex-direction: column
+                align-items: center
+                justify-content: center
     .footer
         &__menu
             //flex-direction: column
@@ -214,6 +260,8 @@
         &__text
             text-align: center
             display: flex
+    #map
+        width: 290px
     .material
         &__block
             &--link
@@ -221,10 +269,63 @@
                 text-align: center
                 &::after
                     display: none
+    .detail
+        &__block
+            &--social
+                display: none
+        &__post
+            &--comment
+                &-info
+                    flex-direction: column
+                    align-items: center
+        &__comment
+            &--date
+                display: block
+                margin-top: 20px
+        &__content
+            &--title
+                font-size: 35px
+                line-height: 50px
+        &__grid
+            &--container
+                margin-right: 0px
+                max-width: 420px
+    .you
+        &__maylike
+            &--article
+                &--card
+                    flex-direction: column
+                &--content
+                    margin-right: 15px
+                    margin-top: 15px
 @media screen and (max-width:445px)
     .logo
         &__svg
             width: 150px !important
+    .detail
+        &__grid
+            &--container
+                margin-right: 0px
+                max-width: 320px
+@media screen and (max-width: 420px)
+    .you
+        &__maylike
+            &--article
+                display: none
+    .detail
+        &__wrap
+            &--content
+                display: block
+        &__block
+            &--content
+                display: block
+                max-width: 320px
+        &__page
+            &--block
+                display: block
+        &__popular
+            &--tag
+                display: none
 @media screen and (max-width:375px)
     .logo
         &__svg
@@ -234,3 +335,5 @@
         &__version
             &--item
                 font-size: 12px
+    #map
+        width: 260px

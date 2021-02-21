@@ -1,8 +1,13 @@
 .contacts
     position: relative
     padding-bottom: 87px
+    &__text
+        margin-right: 30px
+    &__map
+        margin-right: 30px
     &__wrap
         display: flex
+        flex-wrap: wrap
         justify-content: space-between
         align-items: flex-start
     &__title
@@ -113,3 +118,6 @@
     &-policy
         &-checkbox
             border: 2px solid $primary
+#map
+    width: 640px
+    height: 409px
