@@ -1870,7 +1870,7 @@ template {
       font-size: 18px;
       margin-right: 10px; }
   .mobile__menu {
-    display: block; } }
+    display: none; } }
 
 @media screen and (max-width: 761px) {
   .language__version--item {
