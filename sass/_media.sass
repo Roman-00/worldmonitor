@@ -65,10 +65,10 @@
             &--button
                 &-btn 
                     font-size: 14px
-    .sidebar
-        &__front
-            &--page
-                max-width: 310px
+@media screen and ( max-width: 1550px )
+    .article
+        &__grid
+            max-width: 600px
 @media screen and ( max-width: 1520px )
     .article
         &__container
@@ -76,6 +76,15 @@
             max-width: 800px
     .sidebar__news--page
         margin-top: 28px
+    .archive
+        &__btn
+            padding: 10px 15px 
+    .sidebar
+        &__front
+            &--page
+                width: 250px
+    .website
+        padding: 10px 10px
 @media screen and (max-width: 1476px)
     .detail
         &__grid
@@ -107,6 +116,38 @@
     .footer
         &__contacts
             margin-top: 20px
+@media screen and (max-width: 1420px)
+    .article
+        &__grid
+            &--item
+                &-1
+                    max-width: 390px
+                    padding: 15px
+    .article
+        &__grid
+            max-width: 595px
+    .sidebar
+        &__front
+            &--page
+                min-height: 435px
+    .block
+        &__magazine
+            margin: 0 10px
+            min-height: 435px
+@media screen and (max-width: 1376px)
+    .article
+        &__grid
+            max-width: 585px
+    .article
+        &__grid
+            grid-gap: 10px
+    .block
+        &__magazine
+            min-height: 430px
+    .sidebar
+        &__front
+            &--page
+                min-height: 430px
 @media screen and (max-width: 1375px)
     .nav
         justify-content: space-between

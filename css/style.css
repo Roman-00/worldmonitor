@@ -822,7 +822,8 @@ template {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  margin: 0 20px; }
+  margin: 0 20px;
+  height: 422px; }
   .block__magazine--item {
     display: flex;
     flex-direction: column;
@@ -869,8 +870,8 @@ template {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: center;
-  width: 320px; }
+  width: 320px;
+  height: 420px; }
 
 .aside-ad {
   margin-bottom: 25px;
@@ -1761,16 +1762,24 @@ template {
   .website__info--desc {
     font-size: 14px; }
   .block__magazine--button-btn {
-    font-size: 14px; }
-  .sidebar__front--page {
-    max-width: 310px; } }
+    font-size: 14px; } }
+
+@media screen and (max-width: 1550px) {
+  .article__grid {
+    max-width: 600px; } }
 
 @media screen and (max-width: 1520px) {
   .article__container {
     grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
     max-width: 800px; }
   .sidebar__news--page {
-    margin-top: 28px; } }
+    margin-top: 28px; }
+  .archive__btn {
+    padding: 10px 15px; }
+  .sidebar__front--page {
+    width: 250px; }
+  .website {
+    padding: 10px 10px; } }
 
 @media screen and (max-width: 1476px) {
   .detail__grid--container {
@@ -1792,6 +1801,28 @@ template {
     max-width: 750px; }
   .footer__contacts {
     margin-top: 20px; } }
+
+@media screen and (max-width: 1420px) {
+  .article__grid--item-1 {
+    max-width: 390px;
+    padding: 15px; }
+  .article__grid {
+    max-width: 595px; }
+  .sidebar__front--page {
+    min-height: 435px; }
+  .block__magazine {
+    margin: 0 10px;
+    min-height: 435px; } }
+
+@media screen and (max-width: 1376px) {
+  .article__grid {
+    max-width: 585px; }
+  .article__grid {
+    grid-gap: 10px; }
+  .block__magazine {
+    min-height: 430px; }
+  .sidebar__front--page {
+    min-height: 430px; } }
 
 @media screen and (max-width: 1375px) {
   .nav {
