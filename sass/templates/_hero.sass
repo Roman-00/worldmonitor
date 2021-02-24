@@ -13,6 +13,17 @@
         grid-template-columns: 1fr 1fr 1fr
         grid-gap: 20px
         max-width: 700px
+        &--pl
+            display: none
+            grid-template-columns: 1fr 1fr
+            .article
+                &__grid
+                    &--item
+                        &-1
+                            max-width: 410px
+        &--mb
+            display: none
+            grid-template-columns: 1fr
         &--item
             overflow: hidden
             &:nth-child(1)
