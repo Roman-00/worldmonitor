@@ -25,17 +25,6 @@ document.addEventListener('DOMContentLoaded', () => {
             });
     };
 
-    const menuSubMenu = () => {
-
-        const submenuItemSelect = document.querySelector('.submenu__item--select');
-        const navItemSubmenu2 = document.querySelector('.nav__item--submenu-2');
-
-        submenuItemSelect.addEventListener('click', () => {
-            navItemSubmenu2.classList.toggle('nav__item--submenu-2--active');
-        });
-
-    };
-
     const swiper = new Swiper('.swiper-container', {
         // Optional parameters
         direction: 'horizontal',
@@ -91,7 +80,6 @@ document.addEventListener('DOMContentLoaded', () => {
     /* Инициализируем все функции скриптов */
     const init = () => {
         searchFunc();
-        menuSubMenu();
         yaMaps();
     };
 
@@ -120,4 +108,8 @@ $(document).ready(function () {
     });
  
     $('#cssmenu>ul>li.has-sub>a').append('<span class="holder"></span>');
+
+    $('.submenu__item--select').on('click', function() {
+        $('.submenu__item--select').siblings('.nav__item--submenu-2').slideToggle();
+    });
 });
