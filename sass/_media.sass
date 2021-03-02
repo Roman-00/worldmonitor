@@ -216,13 +216,17 @@
         &__link
             flex-wrap: wrap
 @media screen and (max-width: 1170px)
-    .article
+    .main
         &__grid
-            &--mb
-                display: grid
+            flex-wrap: wrap
     .nav
         &__item
             font-size: 14px
+@media screen and (max-width: 1148px)
+    .sidebar
+        &__front
+            &--page
+                margin-top: 20px
 @media screen and (max-width: 1100px)
     .logo
         &__svg
@@ -262,6 +266,13 @@
     .mobile
         &__menu
             display: none
+@media screen and (max-width: 835px)
+    .block
+        &__magazine
+            margin-top: 20px
+    .main
+        &__grid
+            justify-content: space-around
 @media screen and (max-width:761px)
     .language
         &__version
@@ -328,6 +339,10 @@
                 flex-direction: column
                 align-items: center
                 justify-content: center
+    .article
+        &__grid
+            &--mb
+                display: grid
     .footer
         &__menu
             //flex-direction: column
@@ -368,6 +383,10 @@
                 text-align: center
                 &::after
                     display: none
+    .article
+        &__grid
+            &--pl
+                display: none
     .detail
         &__block
             &--social
