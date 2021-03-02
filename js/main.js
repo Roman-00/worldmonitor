@@ -1,6 +1,8 @@
 document.addEventListener('DOMContentLoaded', () => {
     'use strict';
 
+    const contacts = document.querySelector('.contacts');
+
     // Функция котора отвечает за скрытие и показ поиска
     const searchFunc = () => {
         const headerSearchBox = document.querySelector('.header__search--box'), 
@@ -53,22 +55,35 @@ document.addEventListener('DOMContentLoaded', () => {
           }
     });
 
+    const swiperMb = new Swiper('.article--swiper-mb', {
+        // Optional parameters
+        direction: 'horizontal',
+        loop: true,
+        slidesPerView: 1,
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+        }
+    });
+
     const yaMaps = () => {
-        // Функция ymaps.ready() будет вызвана, когда
-        // загрузятся все компоненты API, а также когда будет готово DOM-дерево.
-        ymaps.ready(init);
-        function init(){
-            // Создание карты.
-            var myMap = new ymaps.Map("map", {
-                // Координаты центра карты.
-                // Порядок по умолчанию: «широта, долгота».
-                // Чтобы не определять координаты центра карты вручную,
-                // воспользуйтесь инструментом Определение координат.
-                center: [43.235790, 76.940437],
-                // Уровень масштабирования. Допустимые значения:
-                // от 0 (весь мир) до 19.
-                zoom: 15
-            });
+        if(contacts) {
+            // Функция ymaps.ready() будет вызвана, когда
+            // загрузятся все компоненты API, а также когда будет готово DOM-дерево.
+            ymaps.ready(init);
+            function init(){
+                // Создание карты.
+                var myMap = new ymaps.Map("map", {
+                    // Координаты центра карты.
+                    // Порядок по умолчанию: «широта, долгота».
+                    // Чтобы не определять координаты центра карты вручную,
+                    // воспользуйтесь инструментом Определение координат.
+                    center: [43.235790, 76.940437],
+                    // Уровень масштабирования. Допустимые значения:
+                    // от 0 (весь мир) до 19.
+                    zoom: 15
+                });
+            }
         }
     };
 

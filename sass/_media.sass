@@ -314,12 +314,29 @@
             margin-right: 0
         &__text
             margin-right: 0
+@media screen and (max-width:630px)
+    .archive
+        &__btn
+            display: none !important
+            &--mb
+                display: flex !important
+                margin-bottom: 30px
+    .block
+        &__magazine
+            height: 340px
+            min-height: 340px
+    .sidebar
+        &__front
+            &--page
+                min-height: 470px
 @media screen and (max-width:575px)
     .logo
         &__svg
             width: 200px !important
     .swiper-container
         max-width: 475px
+    .article--swiper-mb
+        max-width: 420px !important
     .partners
         display: flex
         flex-direction: column
@@ -416,6 +433,16 @@
                 &--content
                     margin-right: 15px
                     margin-top: 15px
+@media screen and (max-width:525px)
+    .article
+        &--swiper
+            &-mb
+                max-width: 375px !important
+@media screen and (max-width:460px)
+    .article
+        &--swiper
+            &-mb
+                max-width: 325px !important
 @media screen and (max-width:445px)
     .logo
         &__svg
@@ -444,10 +471,18 @@
         &__popular
             &--tag
                 display: none
+    .article
+        &--swiper
+            &-mb
+                max-width: 295px !important
 @media screen and (max-width:375px)
     .logo
         &__svg
             width: 130px !important
+    .article
+        &--swiper
+            &-mb
+                max-width: 260px !important
 @media screen and (max-width:355px)
     .language
         &__version

@@ -24,6 +24,14 @@
         &--mb
             display: none
             grid-template-columns: 1fr
+            &-title
+                margin-top: 30px
+                padding-bottom: 10px
+                font-weight: bold
+                font-size: 25px
+                line-height: 30px
+                border-bottom: 2px solid $primary
+                color: $dark
         &--item
             overflow: hidden
             &:nth-child(1)
@@ -176,6 +184,49 @@
                                             display: block
                                             margin-bottom: 40px
                                             color: $sticknew
+    &__card
+        &--item
+            &-mb
+                margin-top: 30px
+                margin-bottom: 10px
+                padding-bottom: 30px
+                border-bottom: 1px solid $c4
+        &--mb
+            &-title
+                margin-bottom: 30px
+                font-weight: bold
+                font-size: 25px
+                line-height: 30px
+                color: $dark
+            &-except
+                max-width: 275px
+                margin-bottom: 40px
+                font-weight: normal
+                font-size: 14px
+                line-height: 17px
+                color: $dark
+        &--grid
+            &--info
+                display: flex
+                align-items: center
+                justify-content: space-between
+                .view
+                    margin-left: auto
+                    margin-right: 20px
+                    color: $primary
+                .favorite
+                    svg
+                        color: $primary
+        &--author
+            &--mb
+                display: flex
+                align-items: center
+        &--author
+            &--author
+                font-weight: 500
+                font-size: 12px
+                line-height: 14px
+                color: $primary
 .category
     &__name
         font-weight: 900
@@ -249,13 +300,15 @@
     cursor: pointer
 .archive
     &__btn
-        display: flex
+        display: flex !important
         justify-content: center
         align-items: center
         padding: 10px 20px
         border: 2px solid $primary
         border-radius: 10px
         cursor: pointer
+        &--mb
+            display: none !important
         &--text
             display: block
             margin-left: 20px
